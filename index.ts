@@ -7,9 +7,8 @@ const useState = <T>(initialValue: T): [() => T, (arg: T) => void] => {
   return [getState, setState];
 };
 
-const [getState, setState] = useState(0);
+const [count, setCount] = useState(0);
 
-console.log(getState());
-setState(3);
-console.log(getState());
-setState("lala");
+console.log(count());
+setCount(3);
+console.log(count());
